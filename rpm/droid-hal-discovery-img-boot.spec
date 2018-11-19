@@ -7,5 +7,6 @@
 
 %define display_brightness_path /sys/class/leds/lcd-backlight/brightness
 %define display_brightness 16
+%define embed_recovery 1
 
 %include initrd/droid-hal-device-img-boot.inc
