@@ -10,7 +10,4 @@
 
 %define lvm_root_size 4000
 
-# mkbootimg needs python
-BuildRequires:  python
-
 %include initrd/droid-hal-device-img-boot.inc
