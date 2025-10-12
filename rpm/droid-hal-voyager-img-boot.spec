@@ -10,4 +10,6 @@
 
 %define lvm_root_size 4000
 
+%define initrd_combined 1
+
 %include initrd/droid-hal-device-img-boot.inc
