@@ -1,6 +1,8 @@
 #!/bin/sh
-if grep -q "skip_initramfs" /proc/cmdline; then
-    echo "/normal-init"
-else
+if grep -q "warmboot=0x77665502" /proc/cmdline; then
     echo "/recovery-init"
+elif yamui-powerkey -p -k VOLUMEDOWN; then
+    echo "/recovery-init"
+else
+    echo "/normal-init"
 fi
