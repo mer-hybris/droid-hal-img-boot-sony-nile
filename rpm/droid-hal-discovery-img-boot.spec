@@ -12,4 +12,7 @@
 
 %define initrd_combined 1
 
+# Extra key handling in yamui-powerkey
+BuildRequires: yamui >= 1.4.0
+
 %include initrd/droid-hal-device-img-boot.inc
